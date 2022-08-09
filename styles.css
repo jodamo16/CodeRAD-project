@@ -1,3 +1,4 @@
+/* variables */
 :root {
    --color-white: white;
    --button-primary: #7dbcff;
@@ -12,6 +13,7 @@
    --danger: #ff888d;
 }
 
+/* universal styles */
 *,
 ::after,
 ::before {
@@ -19,7 +21,7 @@
 }
 
 body {
-    font-family: "Open Sans" sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 0.85rem;
     line-height: 1.6;
@@ -28,7 +30,7 @@ body {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.2;
     color: var(--font-color-dark);
@@ -40,4 +42,104 @@ h2 {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* button */
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    color: var(--font-color-dark);
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.6rem 1.7rem;
+    border-radius: 20px;
+    transition: ease-in-out 0.3s;
+}
+
+/* nav */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    transition: ease-in-out 0.3s;
+}
+
+[aria-controls="navbarDropdown"] {
+    display: none;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: ease-in-out;
+    color: var(--color-white);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link a {
+    color: var(--color-white);
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: "Hind", sans-serif;
+    text-transform: uppercase;
+    margin-right: 2.5rem;
+    line-height: 1.5rem;
+}
+
+/* header */
+.bg-header {
+    background-image: url(../CodeRad-assets/bg-header-1.jpg);
+    background-color: var(--footer);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 50% 20%;
+    padding: 4.5rem 0;
+    z-index: -2;
+}
+
+.bg-header::before {
+    background-image: linear-gradient(30deg, 
+    rgba(21, 27, 38, 0.8) 0%,
+    rgba(0, 0, 0, 0.2)100%);
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero-header {
+    color: var(--color-white);
+}
+
+.btn-white {
+    background-color: var(--color-white);
+    color: var(--button-primary);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
 }
