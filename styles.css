@@ -1,0 +1,43 @@
+:root {
+   --color-white: white;
+   --button-primary: #7dbcff;
+   --button-secondary: #a1ecff;
+   --font-color-base: #666;
+   --font-color-light: #212529;
+   --font-color-dark: #b0aebe;
+   --font-color-link: #57a6ff;
+   --footer: #34314b;
+   --footer-base: #2e2b45;
+   --success: #64ecf5;
+   --danger: #ff888d;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans" sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    letter-spacing: 0;
+    color: var(--font-color-base);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--font-color-dark);
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
