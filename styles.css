@@ -11,6 +11,7 @@
    --footer-base: #2e2b45;
    --success: #64ecf5;
    --danger: #ff888d;
+   --contrast: rgba(246, 248, 249, 0.7);
 }
 
 /* universal styles */
@@ -42,6 +43,10 @@ h2 {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.bg-contrast {
+    background-color: var(--contrast);
 }
 
 @media screen and (min-width: 1200px) {
@@ -153,7 +158,7 @@ h2 {
 
 /* why me section */
 .why-me-section {
-    padding: 9rem 0;
+    padding-top: 9rem;
 }
 
 .why-me-wrapper {
@@ -180,4 +185,47 @@ h2 {
     font-weight: 600;
     margin-top: 0.3rem;
     margin-bottom: 1.2rem;
+}
+
+/* services section */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding-top: 8rem;
+}
+
+.service-card {
+    border-radius: 8px;
+    box-shadow: 0 0 8px var(--font-color-light);
+    padding: 2rem;
+}
+
+.service-circle {
+    display: block;
+    float: left;
+    margin-right: 0.8rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--font-color-base);
+}
+
+.circle1 {
+   background-image: linear-gradient(90deg, #9ccdf3 0%, #94aafd 100%); 
+}
+.circle2 {
+    background-image: linear-gradient(90deg, #55edc0 0%, #4bdbdb 100%); 
+}
+.circle3 {
+    background-image: linear-gradient(90deg, #fda498 0%, #f58b9e 100%); 
+}
+.circle4 {
+    background-image: linear-gradient(90deg, #f2a7ca 0%, #c2894f 100%); 
+}
+.circle5 {
+    background-image: linear-gradient(90deg, #ffc187 0%, #fe93a7 100%); 
+}
+.circle6 {
+    background-image: linear-gradient(90deg, #a1ecff 0%, #7bbcff 100%); 
 }
