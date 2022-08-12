@@ -427,9 +427,99 @@ hr {
 }
 
 /* footer */
+.background-light {
+    background-color: var(--footer);
+}
+
+.background-dark {
+    background-color: var(--footer-base);
+}
+
 .footer-top {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
     padding: 4rem 0;
+}
+
+.footer-col {
+    justify-self: center;
+}
+
+.col-header {
+    color: var(--color-white);
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    margin-bottom: 1.2rem;
+}
+
+.contact-list li {
+    color: var(--color-white);
+    margin-bottom: 0.7rem;
+}
+
+.contact-list i {
+    width: 1.5rem;
+}
+
+.social-list li {
+    display: inline-block;
+    margin-right: 1.4rem;
+}
+
+.social-list a {
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.8rem;
+    color: var(--color-white);
+    margin-bottom: 0.5rem;
+}
+
+.services-wrapper p {
+    color: #858497;
+    margin-top: 0;
+}
+
+.recent-posts {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.footer-img {
+    width: 175px;
+    margin-right: 1rem;
+}
+
+.post-inner a {
+    margin: 0;
+    display: block;
+    color: var(--color-white);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.copyright-para {
+    margin-top: 0;
+    color: var(--font-color-light);
+}
+
+.footer-links ul li {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding-right: 0.3rem;
+}
+
+.footer-links a {
+    color: var(--color-white);
 }
