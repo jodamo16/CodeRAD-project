@@ -149,6 +149,10 @@ h2 {
     color: var(--font-color-dark);
 }
 
+.navbar.sticky .nav-link a {
+    color: var(--font-color-dark);
+}
+
 /* responsive nav */
 @media screen and (max-width: 768px) {
     [aria-controls="navbarDropdown"] {
@@ -224,12 +228,13 @@ h2 {
 }
 
 .hero-header {
+    margin-top: 5rem;
     color: var(--color-white);
 }
 
 /* why me section */
 .why-me-section {
-    padding-top: 9rem;
+    padding: 6rem 0;
 }
 
 .why-me-wrapper {
@@ -436,7 +441,7 @@ hr {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 1fr 1fr;
-    gap: 1.3rem;
+    gap: 2rem;
 }
 
 .testimonial-main {
@@ -502,6 +507,7 @@ hr {
 
 .footer-col {
     justify-self: center;
+    max-width: 250px;
 }
 
 .col-header {
@@ -580,6 +586,32 @@ h5 {
 
 .footer-links a {
     color: var(--color-white);
+}
+
+@media screen and (max-width: 768px) {
+    .footer-col:nth-child(3) {
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-wrapper {
+        text-align: center;
+    }
+
+    .why-me-wrapper {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .why-me-wrapper div {
+        flex: initial;
+        padding-right: 0;
+    }
+
+    .footer-col:nth-child(3) {
+        grid-column: initial;
+    }
 }
 
 /* jump to top button */
